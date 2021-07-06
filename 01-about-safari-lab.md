@@ -12,7 +12,9 @@ Step 2:  Login to Safari https://www.ultimatix.net/uxportal/uxportalhome.html/la
 
 Step 3:  Visit the Sandbox Page https://learning.oreilly.com/scenarios/kubernetes-sandbox/9781492062820/
 
-Step 4:  Launch the Sandbox 
+Step 4:  Launch the Sandbox
+
+Step 5: In the command prompt, do clone this repository since there are many samples present in this repository `git clone git@github.com:anirbansingharoy/k8s-workshop.git`
 
 **Note**: There won't be any backup for the new files you will create in that sandbox environment. It will be erased if you close the browser window or reload the window. 
 Make sure you take backup of the configuration file(Which you think you need to refer later) manually in your local computer.
@@ -20,6 +22,9 @@ Make sure you take backup of the configuration file(Which you think you need to 
 There were some tools available like `minikube`, `micro-k8s` which helps you to spin up a kubernetes cluster in your local. 
 * Details on Minikube : https://minikube.sigs.k8s.io/docs/start/
 * Details on Microk8s : https://microk8s.io/
+
+
+
 
 
 
