@@ -1,4 +1,4 @@
-#Hands On with safari Kubernetes sandbox
+# Hands On with safari Kubernetes sandbox
 
 We will use safari kubernetes sandbox as a Hands On platform. This platform enables us to interact with a remote kubernetes cluster using any browser. 
 We don't need to install anything in our computer. If you have kubernetes clusters like `minikube`, `microk8s` in your local computer, you can continue using that.
@@ -7,8 +7,11 @@ Although the safari sandbox have some limitation, but for most of the topics we 
 Steps to follow:  
 
 Step 1:  Login to Ultimatix 
+
 Step 2:  Login to Safari https://www.ultimatix.net/uxportal/uxportalhome.html/landingPage?landingPath=%2FuxContent%2FlandingPages1%2FSafariDigicore.html
+
 Step 3:  Visit the Sandbox Page https://learning.oreilly.com/scenarios/kubernetes-sandbox/9781492062820/
+
 Step 4:  Launch the Sandbox 
 
 **Note**: There won't be any backup for the new files you will create in that sandbox environment. It will be erased if you close the browser window or reload the window. 
