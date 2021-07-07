@@ -1,0 +1,27 @@
+apiVersion: apps/v1 #The apiVersion for this object is currently app/v1
+kind: ReplicaSet
+# In the metadata part, we define the name by which we can refer to this ReplicaSet.
+#We also define a number of labels through which we can identify it.
+metadata:
+  name: basic-node-js-app-rs
+  labels:
+    name: basic-node-js-app
+#The spec part is mandatory in the ReplicaSet object. It defines:
+spec:
+  replicas: 4 #The number of replicas this controller should maintain. It default to 1 if it was not specified
+  selector: #The selection criteria by which the ReplicaSet will choose its pods.
+    matchLabels:
+      name: basic-node-js-app
+  #The pod template is used to create (or recreate) new pods.
+  #It has its own metadata, and spec where the containers are specified
+  template:
+    metadata:
+      labels:
+        name: basic-node-js-app
+    spec:
+      containers:
+        - name: basic-node-js-app
+          image: docker.io/k8sworkshop07jul/321564-basic-node-app:v1
+          ports:
+            - containerPort: 8080
+          imagePullPolicy: Always
