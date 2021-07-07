@@ -14,7 +14,7 @@ Step 3:  Visit the Sandbox Page https://learning.oreilly.com/scenarios/kubernete
 
 Step 4:  Launch the Sandbox
 
-Step 5: In the command prompt, do clone this repository since there are many samples present in this repository `git clone git@github.com:anirbansingharoy/k8s-workshop.git`
+Step 5: In the command prompt, do clone this repository since there are many samples present in this repository `git clone https://github.com/anirbansingharoy/k8s-workshop.git`
 
 Step 6: Type `docker login` in the command prompt.(Username: k8sworkshop07jul, Password: Will be shared during the session) 
 
