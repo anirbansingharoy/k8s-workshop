@@ -46,6 +46,6 @@ spec:
 
 **Challenges**
 - Create another Pod using the same image.
-- Create a new endpoint in the node js. Build and deploy the new version in kubernetes
+- Create a new endpoint in the node js application. Build and deploy the new version in kubernetes
 - Create Spring Boot application(Or any other language as per your preference) and build & deploy the application in the kubernetes cluster 
 
