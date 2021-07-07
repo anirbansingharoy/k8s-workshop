@@ -32,15 +32,12 @@ way as IP-network between traditional virtual machines.
 
 The basis for kubernetes networking is that:
 
-* pods on a node can communicate with all pods on all nodes without NAT (Network Address Translation)
+* pods on a node can communicate with all pods on all nodes
 * agents on a node (e.g. system daemons, kubelet) can communicate with all pods on that node
 
 This means that:
 
 * Containers can reach other containers inside other pods using the pods IP-address
 * Containers can reach other containers inside the same pod using the localhos network
-
-This makes it easy to migrate existing applications from traditional VMs to k8s since existing VMs map to pods and
-processes that used to be on the same VM can either be a containers in the same pod or moved to their own pods.
 
  
