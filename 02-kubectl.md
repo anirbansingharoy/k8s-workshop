@@ -48,7 +48,13 @@ $ k get pods --all-namespaces
 $ k get nodes --all-namespaces
 ```
 
-## 4. Important!
+## 4.Observe Kubernetes Events 
+Kubernetes events helps us to observe what is happening in the cluster. Any actions towards the cluster triggers events and the same can be observed by us. 
+```
+k get events -w #Show events in watch mode
+```
+
+## 5. Important!
 When working with Kubernetes and kubectl you should ALWAYS know which context you work in. A context refers to the Kubernetes cluster you will be executing the `kubectl` commands. 
 For Example : You might have two different cluster for QA and Production
 
@@ -58,8 +64,10 @@ $ k config current-context      # display the current-context
 $ k config use-context kubernetes-admin@kubernetes # set the default context to kubernetes-admin@kubernetes
 ```
 
-## 5. More Tasks (Refer Cheat Sheet)
+
+## 6. More Tasks (Refer Cheat Sheet)
 - Get list of nodes present in the cluster (Hint: `k get n......`)  
 - What is the IP address for the Node ? (Hint: `-o wide`/`k describe ....`)
 - What is OS running in these nodes ? (Hint:  `-o wide`/`k describe ....`)
 - See the entire kubectl configuration file
+- Sort Kubernetes Events by timestamp
