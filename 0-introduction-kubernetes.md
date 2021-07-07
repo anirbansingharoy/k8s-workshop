@@ -2,7 +2,7 @@
 
 https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/#why-you-need-kubernetes-and-what-can-it-do
 
-Kubernetes is container orchestration framework that helps us running containerized applications in production and provide a wide range of supporting mechanismas like:
+Kubernetes is [container orchestration framework](0-introduction-containers.md) that helps us running containerized applications in production and provide a wide range of supporting mechanismas like:
 
 * Service discovery and load balancing
 * Storage orchestration
