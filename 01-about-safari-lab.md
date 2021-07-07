@@ -16,6 +16,8 @@ Step 4:  Launch the Sandbox
 
 Step 5: In the command prompt, do clone this repository since there are many samples present in this repository `git clone git@github.com:anirbansingharoy/k8s-workshop.git`
 
+Step 6: Type `docker login` in the command prompt.(Username: k8sworkshop07jul, Password: Will be shared during the session) 
+
 **Note**: There won't be any backup for the new files you will create in that sandbox environment. It will be erased if you close the browser window or reload the window. 
 Make sure you take backup of the configuration file(Which you think you need to refer later) manually in your local computer.
 
