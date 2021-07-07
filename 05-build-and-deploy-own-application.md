@@ -41,7 +41,13 @@ spec:
         - containerPort: 8080
       imagePullPolicy: Always
 ```
-6. Do port-forward and check if your access the api's from the lab.
+6. Deploy the deployment yaml.
+
+```
+k apply -f {deployment_spec}.yaml
+```
+
+7. Do port-forward and check if your access the api's from the lab.
 
 
 **Challenges**
