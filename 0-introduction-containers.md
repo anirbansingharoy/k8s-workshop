@@ -5,7 +5,7 @@ This decoupling allows container-based applications to be deployed easily and co
 
 For those coming from virtualized environments, containers are often compared with virtual machines (VMs). You might already be familiar with VMs: a guest operating system such as Linux or Windows runs on top of a host operating system with virtualized access to the underlying hardware. Like virtual machines, containers allow you to package your application together with libraries and other dependencies, providing isolated environments for running your software services. As you’ll see below however, the similarities end here as containers offer a far more lightweight unit for developers and IT Ops teams to work with, carrying a myriad of benefits.
 
-![Containers_Vs_VM](vm_vs_container.png)
+![Containers_Vs_VM](deployment_model.png)
 
 # Why Containers
 
