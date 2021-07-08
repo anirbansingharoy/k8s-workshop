@@ -6,12 +6,13 @@ const PORT = 8080;
 
 const app = express();
 
-app.get('/hellowworld', (req, res) => {
-  res.send('Hello World');
+const pod_name = process.env.HOSTNAME
+app.get('/helloworld', (req, res) => {
+  res.send('Hello World from pod: '+pod_name);
 });
 
 app.get('/hellomars', (req, res) => {
-  res.send('Hello Mars');
+  res.send('Hello Mars from pod: '+pod_name);
 });
 
 app.get('/health', (req, res) => {
