@@ -80,4 +80,13 @@ but unable to make progress. Restarting a container in such a state can help to 
 **StartupProbe:** Kubernetes uses startup probes to know when a container application has started. 
 If such a probe is configured, it disables liveness and readiness checks until it succeeds, making sure those probes don't interfere with the application startup. 
 
-See 07-basic-node-app-deployment-with-probes.yaml file for sample 
+See 07-basic-node-app-deployment-with-probes.yaml file for example usage
+
+Step 11: Managing Resources(cpu/memory) for Containers
+
+It's possible and often recommended configuring resources for containers. There are two configuration options present
+
+**Requests:** Kubernetes reserve this amount of resources and make it available to the container to use. This is a guaranteed quota.  
+**Limits:** Maximum amount of resource the container can consume. If memory consumption is higher than limits , kubernetes will restart the pod.
+
+Sample configuration can be found 07-basic-node-app-deployment-with-resources.yaml 

@@ -1,0 +1,53 @@
+apiVersion: apps/v1 #The apiVersion for this object is currently app/v1
+kind: Deployment
+# In the metadata, we define the name of this Deployment and its label.
+metadata:
+  name: basic-node-js-app
+  labels:
+    name: basic-node-js-app
+  annotations:
+    kubernetes.io/change-cause: "Deployed Version 1"
+spec:
+  replicas: 4 #The spec field defines how many pods we need this Deployment to maintain.
+  selector: #Selection criteria that the controller uses to acquire the target pods.
+    matchLabels:
+      name: basic-node-js-app
+  #The pod template is used to create (or recreate) new pods.
+  #It has its own metadata, and spec where the containers are specified
+  template:
+    metadata:
+      labels:
+        name: basic-node-js-app
+    spec:
+      containers:
+        - name: basic-node-js-app
+          image: docker.io/k8sworkshop07jul/321564-basic-node-app:v1
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "250m"
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 8080
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 3
+            periodSeconds: 3
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 3
+            periodSeconds: 3
+          startupProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 3
+            failureThreshold: 30
+            periodSeconds: 10
+          imagePullPolicy: Always
