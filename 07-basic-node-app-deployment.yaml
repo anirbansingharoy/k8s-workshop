@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: basic-node-js-app
-          image: docker.io/k8sworkshop07jul/321564-basic-node-app:v1
+          image: docker.io/k8sworkshop07jul/591242-basic-node-app:v3
           ports:
             - containerPort: 8080
           imagePullPolicy: Always
