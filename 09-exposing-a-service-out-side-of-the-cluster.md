@@ -39,6 +39,8 @@ A LoadBalancer service is the standard way to expose a service to the internet. 
 
 ![LoadBalancer](LoadBalancer.png)
 
+Sample Yaml
+
 ```
 apiVersion: v1
 kind: Service
@@ -56,7 +58,7 @@ spec:
       targetPort: 8080
 ```
 
-##Internal Load balancer
+## Internal Load balancer
 
 Some cloud provider also supports creating a load balancer service which is type of Internal meaning the loadbalancer will not get a public IP Address.
 The configuration which enables this option might vary between different cloud providers.
@@ -68,6 +70,12 @@ https://kubernetes.io/docs/concepts/services-networking/service/#internal-load-b
 Ingress exposes HTTP and HTTPS routes from outside the cluster to services within the cluster. Traffic routing is controlled by rules defined on the Ingress resource.
 An Ingress may be configured to give Services externally-reachable URLs, load balance traffic, terminate SSL / TLS.
 
-
 ![Ingress](Ingress.png)
 
+In order to make Ingress's to work, we needed to have an Ingress Controller installed in our cluster.  An Ingress controller is responsible for fulfilling the Ingress, usually with a load balancer.
+
+There are different types of Ingress Controller present in the market
+https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/
+
+
+Please have a look on 09-basic-node-app-ingress.yaml for the sample Ingress configuration details.
