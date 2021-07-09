@@ -79,3 +79,5 @@ https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/
 
 
 Please have a look on 09-basic-node-app-ingress.yaml for the sample Ingress configuration details.
+
+You can also try out the scenario in safari to get more insight https://learning.oreilly.com/scenarios/create-kubernetes-ingress/9781492061977/
