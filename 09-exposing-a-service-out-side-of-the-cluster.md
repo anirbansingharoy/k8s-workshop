@@ -80,4 +80,12 @@ https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/
 
 Please have a look on 09-basic-node-app-ingress.yaml for the sample Ingress configuration details.
 
+It's also possible to configure TLS at Ingress Level. 
+
+Use with your own certificates: https://docs.microsoft.com/en-us/azure/aks/ingress-own-tls
+
+You can also cert-manager to manage certificates and integrate it with Ingress. https://cert-manager.io/
+
+
+
 You can also try out the scenario in safari to get more insight https://learning.oreilly.com/scenarios/create-kubernetes-ingress/9781492061977/
