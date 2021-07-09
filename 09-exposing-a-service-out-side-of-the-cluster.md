@@ -11,7 +11,7 @@ A ClusterIP Service, to which the NodePort Service routes, is automatically crea
 
 ![NodePort](NodePort.png)
 
-Sample Yaml
+Sample YAML
 
 ```
 apiVersion: v1
@@ -39,7 +39,7 @@ A LoadBalancer service is the standard way to expose a service to the internet. 
 
 ![LoadBalancer](LoadBalancer.png)
 
-Sample Yaml
+Sample YAML
 
 ```
 apiVersion: v1
@@ -72,6 +72,29 @@ An Ingress may be configured to give Services externally-reachable URLs, load ba
 
 ![Ingress](Ingress.png)
 
+Sample YAML 
+
+```
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: basic-node-js-app
+  labels:
+    name: basic-node-js-app
+spec:
+  rules:
+    - host: k8s-workshop.tcs.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: basic-node-js-app
+                port:
+                  number: 80
+```
+
 In order to make Ingress's to work, we needed to have an Ingress Controller installed in our cluster.  An Ingress controller is responsible for fulfilling the Ingress, usually with a load balancer.
 
 There are different types of Ingress Controller present in the market
@@ -85,7 +108,6 @@ It's also possible to configure TLS at Ingress Level.
 Use with your own certificates: https://docs.microsoft.com/en-us/azure/aks/ingress-own-tls
 
 You can also cert-manager to manage certificates and integrate it with Ingress. https://cert-manager.io/
-
 
 
 You can also try out the scenario in safari to get more insight https://learning.oreilly.com/scenarios/create-kubernetes-ingress/9781492061977/
