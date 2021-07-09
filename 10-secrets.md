@@ -3,6 +3,7 @@
 Kubernetes Secrets let you store and manage sensitive information such as passwords , ssh keys , certificate details separately. 
 This helps to decouple the sensitive information from Pod configuration and injected into the pod in runtime. 
 
+https://kubernetes.io/docs/concepts/configuration/secret/
 
 # Task
 
