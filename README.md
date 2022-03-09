@@ -12,8 +12,8 @@ Welcome to this workshop on kubernetes (k8s). Please follow mention path to cont
 7. [Working with replica set](06-ReplicaSet.md)
 8. [Working with Deployment](07-Deployment.md)
 6. [Working with Services](08-Service.md)
-7. Exposing a Service Ouside of the Cluster
-8. Secrets
-9. ConfigMap
-10. Volumes
-11. Extra
+7. [Exposing a Service Ouside of the Cluster](09-exposing-a-service-out-side-of-the-cluster.md)
+8. [Secrets](10-secrets.yaml)
+9. [ConfigMap](11-configmap.md)
+10. [Volumes](11-volume.md)
+11. [Extra](12-Extra.md)
